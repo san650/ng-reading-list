@@ -1,11 +1,11 @@
 <div class="article">
   <article class="book-group">
     <h3>To read next
-      <span>({{books.length}})</span>
+      <span>({{(books | shelveNext).length}})</span>
     </h3>
     <div class="content">
       <ol>
-        <li ng-repeat="book in books">
+        <li ng-repeat="book in books | shelveNext">
           <a href="#">{{book.title}}</a>
           <a class="year" href="by_year.html">({{book.publicationDate}})</a> -
           <a href="biography.html">{{book.author}}</a>
