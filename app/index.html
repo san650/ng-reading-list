@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="readingListApp">
+    <header class="header">
+      <h1>Reading list</h1>
+    </header>
+    <div class="container">
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="index.html" class="is-active">Dashboard</a>
+          </li>
+          <li>
+            <a href="to_read.html">To read next</a>
+          </li>
+          <li>
+            <a href="to_buy.html">To buy</a>
+          </li>
+          <li>
+            <a href="search.html">Search</a>
+          </li>
+          <li>
+            <a href="history.html">History</a>
+          </li>
+        </ul>
+        <p>group by</p>
+        <ul>
+          <li>
+            <a href="by_author.html">author</a>
+          </li>
+          <li>
+            <a href="by_year.html">year</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main">
+        <div class="article">
+          <article class="book-group">
+            <h3>To read next
+              <span>(6)</span>
+            </h3>
+            <div class="content">
+              <ol>
+                <li>
+                  <a href="#">All the King’s Men</a>
+                  <a class="year" href="by_year.html">(1946)</a> -
+                  <a href="biography.html">Robert Penn Warren</a>
+                </li>
+                <li>
+                  <a href="#">Lord of the Flies</a>
+                  <a class="year" href="by_year.html">(1955)</a> -
+                  <a href="biography.html">William Golding</a>
+                </li>
+                <li>
+                  <a href="#">To Kill a Mockingbird</a>
+                  <a class="year" href="by_year.html">(1960)</a> -
+                  <a href="biography.html">Harper Lee</a>
+                </li>
+                <li>
+                  <a href="#">Ubik</a>
+                  <a class="year" href="by_year.html">(1969)</a> -
+                  <a href="biography.html">Philip K. Dick</a>
+                </li>
+              </ol>
+              <p>
+              <a href="to_read.html" class="more">view more...</a>
+              </p>
+            </div>
+          </article>
+          <article class="book-group">
+            <h3>To buy
+              <span>(1)</span>
+            </h3>
+            <div class="content">
+              <ol>
+                <li>
+                  <a href="#">Ubik</a>
+                  <a class="year" href="by_year.html">(1969)</a> -
+                  <a href="biography.html">Philip K. Dick</a>
+                  <a href="#" class="action" onclick="javascript:alert('Remove book from this list');">Bought</a>
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article class="book-group">
+            <h3>History
+              <span>(1)</span>
+            </h3>
+            <div class="content">
+              <ol>
+                <li>
+                  <a href="#">I, Claudius</a>
+                  <a class="year" href="by_year.html">(1934)</a> -
+                  <a href="biography.html">Robert Graves</a>
+                </li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
