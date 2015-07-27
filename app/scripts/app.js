@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'readingListFilters'
+    'readingListFilters',
+    'readingListComponents'
   ])
   .config(function ($routeProvider) {
     $routeProvider
